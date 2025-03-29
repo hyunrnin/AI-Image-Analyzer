@@ -4,6 +4,11 @@
 
 ---
 
+## 👤 MADE BY
+
+- **김현민**
+
+---
 ## ✅ 주요 기능
 
 - Hugging Face의 **ViT 모델**(`facebook/deit-base-patch16-224`)을 사용하여 이미지를 분류
@@ -85,11 +90,5 @@ python main.py
 
 - 모델 제공: [Hugging Face](https://huggingface.co/)
 - 모델 링크: [facebook/deit-base-patch16-224](https://huggingface.co/facebook/deit-base-patch16-224)
-
----
-
-## 👤 MADE BY
-
-- **김현민**
 
 ---
