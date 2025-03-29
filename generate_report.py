@@ -3,6 +3,7 @@ import shutil
 import pandas as pd
 import matplotlib.pyplot as plt
 import json
+import csv
 
 # 한글 폰트 설정 (Windows 기준)
 plt.rcParams["font.family"] = "Malgun Gothic"
@@ -17,7 +18,7 @@ input_folder = "input_images"
 wrong_folder = "wrong_predictions"
 os.makedirs(wrong_folder, exist_ok=True)
 
-# 정답 라벨 파일이 있으면 불러오기
+# 정답 라벨 파일을 CSV로 불러오기
 gt_labels = {}
 if os.path.exists("labels.csv"):
     with open("labels.csv", newline="", encoding="utf-8") as f:
