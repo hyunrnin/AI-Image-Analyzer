@@ -3,11 +3,10 @@ import time
 import os
 import shutil
 
-# 결과물 삭제 함수
 def reset_outputs():
     targets = [
-        "result.json",  # JSON 파일도 삭제하도록 추가
-        "result.csv",   # 만약 CSV도 필요 없으면 여기에 추가
+        "result.json",
+        "result.csv",
         "class_distribution.png",
         "sorted_images",
         "wrong_predictions"
@@ -23,7 +22,6 @@ def reset_outputs():
             print(f"파일 삭제: {target}")
     print("초기화가 완료되었습니다.\n")
 
-# 전체 실행 함수
 def run_all_steps():
     print("\n이미지 분석을 시작합니다.")
     start_time = time.time()
@@ -35,7 +33,6 @@ def run_all_steps():
     end_time = time.time()
     print(f"\n모든 작업이 완료되었습니다. (총 소요 시간: {end_time - start_time:.2f}초)\n")
 
-# 대화형 실행 루프
 while True:
     print("\n명령 선택:")
     print("Enter 키          → 전체 실행")
